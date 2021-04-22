@@ -46,6 +46,7 @@ public class JOLSample_01_Basic {
      *   a) how much the object header consumes;
      *   b) how fields are laid out;
      *   c) how the external alignment beefs up the object size
+     * https://blog.csdn.net/weixin_55891090/article/details/114852042
      */
 
     public static void main(String[] args) {
