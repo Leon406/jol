@@ -75,6 +75,7 @@ public class JOLSample_26_Defragmentation {
 
         Object obj = array;
 
+        out.println(GraphLayout.parseInstance(obj).totalSize());
         GraphLayout.parseInstance(obj).toImage("array-1-new.png");
 
         for (int c = 2; c <= 5; c++) {

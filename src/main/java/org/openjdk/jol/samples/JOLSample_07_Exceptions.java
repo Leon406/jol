@@ -41,7 +41,7 @@ import static java.lang.System.out;
 public class JOLSample_07_Exceptions {
 
     /*
-     * This example shows some of the fields are treated specially in VM.
+     * This example shows some fields are treated specially in VM.
      *
      * In JDK 8 and lower, you would see suspicious gap in Throwable class.
      * If you look in the Java source, you will see the Throwable.backtrace

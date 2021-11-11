@@ -81,28 +81,35 @@ public class JOLSample_10_DataModels {
     };
 
     public static void main(String[] args) {
+
+        A a = new A();
+        a.a = "hell1111111111";
         {
             Layouter l = new CurrentLayouter();
             System.out.println("***** " + l);
             System.out.println(ClassLayout.parseClass(A.class, l).toPrintable());
+            System.out.println(ClassLayout.parseInstance(a, l).toPrintable());
         }
 
         for (DataModel model : MODELS_JDK8) {
             Layouter l = new HotSpotLayouter(model, 8);
             System.out.println("***** " + l);
             System.out.println(ClassLayout.parseClass(A.class, l).toPrintable());
+            System.out.println(ClassLayout.parseInstance(a, l).toPrintable());
         }
 
         for (DataModel model : MODELS_JDK8) {
             Layouter l = new HotSpotLayouter(model, 15);
             System.out.println("***** " + l);
             System.out.println(ClassLayout.parseClass(A.class, l).toPrintable());
+            System.out.println(ClassLayout.parseInstance(a, l).toPrintable());
         }
 
         for (DataModel model : MODELS_JDK15) {
             Layouter l = new HotSpotLayouter(model, 15);
             System.out.println("***** " + l);
             System.out.println(ClassLayout.parseClass(A.class, l).toPrintable());
+            System.out.println(ClassLayout.parseInstance(a, l).toPrintable());
         }
     }
 

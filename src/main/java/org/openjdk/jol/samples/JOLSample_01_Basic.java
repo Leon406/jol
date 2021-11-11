@@ -52,6 +52,7 @@ public class JOLSample_01_Basic {
     public static void main(String[] args) {
         out.println(VM.current().details());
         out.println(ClassLayout.parseClass(A.class).toPrintable());
+        out.println(ClassLayout.parseInstance(new A()).toPrintable());
     }
 
     public static class A {

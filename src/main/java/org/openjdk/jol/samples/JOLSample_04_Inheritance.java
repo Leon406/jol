@@ -55,9 +55,9 @@ public class JOLSample_04_Inheritance {
         out.println(VM.current().details());
         out.println("layout");
         out.println(ClassLayout.parseClass(C.class).toPrintable());
-//        GraphLayout graphLayout = GraphLayout.parseInstance(new C());
-//        out.println(graphLayout.toPrintable());
-//        out.println(graphLayout.totalSize());
+        GraphLayout graphLayout = GraphLayout.parseInstance(new C());
+        out.println(graphLayout.toPrintable());
+        out.println(graphLayout.totalSize());
     }
 
     public static class A {

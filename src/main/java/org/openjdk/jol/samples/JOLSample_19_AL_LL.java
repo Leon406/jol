@@ -67,7 +67,7 @@ public class JOLSample_19_AL_LL {
         ArrayList<Integer> al = new ArrayList<>();
         LinkedList<Integer> ll = new LinkedList<>();
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10; i++) {
             Integer io = i; // box once
             al.add(io);
             ll.add(io);
@@ -79,6 +79,8 @@ public class JOLSample_19_AL_LL {
         pw.println(GraphLayout.parseInstance(al).toFootprint());
         pw.println(GraphLayout.parseInstance(ll).toFootprint());
         pw.println(GraphLayout.parseInstance(al, ll).toFootprint());
+        pw.println(GraphLayout.parseInstance(al, ll).toPrintable());
+        GraphLayout.parseInstance(al, ll).totalCount();
         pw.close();
     }
 
